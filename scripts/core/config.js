@@ -1,4 +1,4 @@
-{
+window.CONFIG = {
     "nome": "Aula 01: Contrato Psicológico",
     "academico":{
         "curso": "Licenciatura em Pedagogia",
@@ -43,4 +43,4 @@
     "imported_styles":[
         "custom.css"
     ]
-}
+};

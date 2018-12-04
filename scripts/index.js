@@ -1,7 +1,7 @@
 var manifest = {};
 
 // Get Manifest
-$.get("config.json").then(bootstrapApplication)
+bootstrapApplication();
 
 var ApplicationConfig = function($stateProvider, $mdThemingProvider, $urlRouterProvider, $provide){
   // Configurando o comportamento das roteador
@@ -40,6 +40,9 @@ var ApplicationRun = function($rootScope, $http){
 
 ApplicationRun.$inject = ['$rootScope','$http'];
 
+// Register templates module
+angular.module('templates', []);
+
 var app = angular.module('application', [
   'ngAnimate',
   'ngSanitize',
@@ -49,14 +52,15 @@ var app = angular.module('application', [
   'ui.router',
   'ui.router.state.events',
   'textAngular',
-  'cfp.hotkeys'
+  'cfp.hotkeys'  
 ])
 
 app.config(ApplicationConfig).run(ApplicationRun)
 
+
 function bootstrapApplication(response){
   angular.element(document).ready(function(){
-    manifest = response;
-    angular.bootstrap(document, ['application']);
+    manifest = window.CONFIG;
+    angular.bootstrap(document, ['templates','application']);
   })
 }

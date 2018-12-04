@@ -24,7 +24,7 @@ var Hotkeys = function($mdDialog, hotkeys, Sidenav){
       dialog = $mdDialog.show({
         controller: "SimpleDialogCtrl",
         controllerAs: "dialog",
-        templateUrl: "templates/dialogs/accessibility.html",
+        templateUrl: "dialogs/accessibility.html",
         locals: {          
           title: "Acessibilidade",
           text: null

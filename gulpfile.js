@@ -6,6 +6,8 @@ const autoprefixer = require('gulp-autoprefixer');
 const concat = require('gulp-concat');
 const webserver = require('gulp-webserver');
 
+const templateCache = require('gulp-angular-templatecache');
+
 gulp.task('vendor', () => {
     return gulp.src([
         './node_modules/lodash/lodash.js',
@@ -32,7 +34,7 @@ gulp.task('vendor', () => {
         './node_modules/textangular/dist/textAngular-rangy.min.js',
         './node_modules/textangular/dist/textAngular-sanitize.min.js',
         './node_modules/textangular/dist/textAngular.min.js',
-        './node_modules/angular-hotkeys/build/hotkeys.min.js',
+        './node_modules/angular-hotkeys/build/hotkeys.min.js'
     ])
     .pipe(concat('vendor.js'))
     .pipe(gulp.dest('./js/'));
@@ -61,7 +63,21 @@ gulp.task('javascript', () => {
     .pipe(gulp.dest('./js/'));
 })
 
+gulp.task('templates', () =>{
+    return gulp.src('templates/**/*.html')
+        .pipe(templateCache({ root: 'templates/' }))
+        .pipe(gulp.dest('./js/'));
+})
+
+gulp.task('topicos', () =>{
+    return gulp.src('topicos/**/*.html')
+        .pipe(templateCache({ filename: 'topicos.js', root: 'topicos/' }))
+        .pipe(gulp.dest('./js/'));
+})
+
 gulp.task('scripts', () => {
+    gulp.start('templates')
+    gulp.start('topicos')
     gulp.start('vendor')
     gulp.start('core')
     gulp.start('javascript')
@@ -97,8 +113,7 @@ gulp.task('watch', () => {
 
 gulp.task('copy', ()=> {
   gulp.src([
-    'index.html',
-    'config.json'
+    'index.html'
   ]).pipe(gulp.dest('./dist'));
 
   gulp.src('./css/*.css').pipe(gulp.dest('./dist/css'));

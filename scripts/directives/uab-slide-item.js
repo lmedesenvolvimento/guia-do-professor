@@ -5,7 +5,7 @@ var uabSlideItem = function(){
       legend: "@",
       uabSlideItem: "@"
     },
-    templateUrl: "templates/uab-slide-item.html"
+    templateUrl: "uab-slide-item.html"
   }
 }
 
