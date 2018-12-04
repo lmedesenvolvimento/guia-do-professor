@@ -1,1 +1,1 @@
-# guia-do-professor
+# Guia do professor Projeto MIDE - Mídias digitais na educação 
