@@ -77,7 +77,6 @@ gulp.task('topicos', () =>{
 
 gulp.task('scripts', () => {
     gulp.start('templates')
-    gulp.start('topicos')
     gulp.start('vendor')
     gulp.start('core')
     gulp.start('javascript')

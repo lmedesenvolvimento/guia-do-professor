@@ -62,5 +62,7 @@ function bootstrapApplication(response){
   angular.element(document).ready(function(){
     manifest = window.CONFIG;
     angular.bootstrap(document, ['templates','application']);
-  })
+  })  
 }
+
+

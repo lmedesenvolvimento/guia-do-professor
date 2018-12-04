@@ -62,8 +62,10 @@ function bootstrapApplication(response){
   angular.element(document).ready(function(){
     manifest = window.CONFIG;
     angular.bootstrap(document, ['templates','application']);
-  })
+  })  
 }
+
+
 
 var taConfig = function ($provide) {
   $provide.decorator('taOptions', ['$delegate', function (taOptions) {
@@ -141,7 +143,7 @@ var Hotkeys = function($mdDialog, hotkeys, Sidenav){
       dialog = $mdDialog.show({
         controller: "SimpleDialogCtrl",
         controllerAs: "dialog",
-        templateUrl: "dialogs/accessibility.html",
+        templateUrl: "templates/dialogs/accessibility.html",
         locals: {          
           title: "Acessibilidade",
           text: null
@@ -1247,7 +1249,7 @@ var uabSlideItem = function(){
       legend: "@",
       uabSlideItem: "@"
     },
-    templateUrl: "uab-slide-item.html"
+    templateUrl: "templates/uab-slide-item.html"
   }
 }
 
