@@ -26269,10 +26269,20 @@ body.hc > #root uab-footer md-toolbar {
 uab-sidenav {
   display: block; }
   uab-sidenav md-sidenav {
-    width: 300px;
     height: 100%;
+    width: 300px;
     overflow-y: auto;
     overflow-x: hidden; }
+    uab-sidenav md-sidenav.laptop {
+      width: 54px;
+      -webkit-transition: all ease-in-out 0.3s;
+      transition: all ease-in-out 0.3s;
+      padding-top: 64px; }
+      uab-sidenav md-sidenav.laptop:hover {
+        width: 300px; }
+    uab-sidenav md-sidenav md-content {
+      overflow-y: auto;
+      overflow-x: hidden; }
     uab-sidenav md-sidenav ul.navigation {
       width: 100%;
       margin: 0px;
@@ -26294,6 +26304,13 @@ uab-sidenav {
           text-transform: none; }
           uab-sidenav md-sidenav ul.navigation li > .md-button.active {
             font-weight: bold; }
+          uab-sidenav md-sidenav ul.navigation li > .md-button md-icon {
+            font-size: 24px !important;
+            margin-right: 24px; }
+          uab-sidenav md-sidenav ul.navigation li > .md-button .navigation-title {
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1; }
     uab-sidenav md-sidenav .navigation-header {
       font-size: 1.5rem;
       margin: 16px 4px;

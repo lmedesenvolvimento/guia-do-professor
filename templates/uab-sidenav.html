@@ -1,12 +1,17 @@
 <md-sidenav
   class="md-sidenav-left"
+  ng-class="{ 'laptop' : $root.$mdMedia('gt-sm') }"
   md-component-id="uab-sidenav"
+  md-is-locked-open="$root.$mdMedia('gt-sm') ? true : false"
   md-whiteframe="4">
   <md-content layout-padding>
-    <p class="navigation-header">Tópicos</p>
+    <p class="navigation-header" ng-if="!$root.$mdMedia('gt-sm')">Tópicos</p>
     <ul class="navigation">
       <li ng-repeat="topico in $root.$global.manifest.topicos" md-trucante>
-        <a md-button ui-sref="{{topico.slug}}" ui-sref-active="active"> {{topico.nome}} </a>
+        <a md-button ui-sref="{{topico.slug}}" ui-sref-active="active"> 
+          <md-icon md-font-icon="{{topico.icon}}" /> 
+          <div class="navigation-title">{{topico.nome}}</div>
+        </a>
       </li>
     </ul>
   </md-content>

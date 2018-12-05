@@ -11,27 +11,32 @@ window.CONFIG = {
             "nome": "Tipografia",
             "local": "topicos/tipografia.html",
             "audio": "audios/Abstract - I Do This (ft. Roze) Prod By Drumma Battalion.mp3",
+            "icon": "icon-schedule",
             "default": true
         },
         {
             "nome": "Grid",
             "local": "topicos/grid.html",
-            "audio": "audios/grid.mp3"
+            "audio": "audios/grid.mp3",
+            "icon": "icon-account_balance"
         },
         {
             "nome": "Componetes",
             "local": "topicos/componentes.html",
-            "audio": "https://cdn.plyr.io/static/demo/Kishi_Bashi_-_It_All_Began_With_a_Burst.mp3"
+            "audio": "https://cdn.plyr.io/static/demo/Kishi_Bashi_-_It_All_Began_With_a_Burst.mp3",
+            "icon": "icon-print"
         },
         {
             "nome": "Formulários",
             "local": "topicos/formularios.html",
-            "audio": "audios/Abstract - Neverland (ft. Ruth B) (Prod. Blulake).mp3"
+            "audio": "audios/Abstract - Neverland (ft. Ruth B) (Prod. Blulake).mp3",
+            "icon": "icon-fingerprint"
         },
         {
             "nome": "Multimídia",
             "local": "topicos/multimidia.html",
-            "audio": "audios/Abstract - Scars (ft. RoZe) (Prod. Drumma Battalion).mp3"
+            "audio": "audios/Abstract - Scars (ft. RoZe) (Prod. Drumma Battalion).mp3",
+            "icon": "icon-build"
         }
     ],
     "pdf": "pdf/impresso.pdf",

@@ -1,12 +1,25 @@
-$sidenav-max-width: 300px;
+$sidenav-max-width: 54px;
+$sidenav-max-width-with-hover: 300px;
 
 uab-sidenav{
   display: block;
   md-sidenav{
-    width: $sidenav-max-width;
     height: 100%;
+    width: $sidenav-max-width-with-hover;
     overflow-y: auto;
     overflow-x: hidden;
+    &.laptop{
+      width: $sidenav-max-width;
+      transition: all ease-in-out 0.3s;
+      padding-top: 64px;
+      &:hover{      
+        width: $sidenav-max-width-with-hover;
+      }
+    }
+    md-content{      
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
     ul.navigation{
       width: 100%;
       margin: 0px;
@@ -26,6 +39,13 @@ uab-sidenav{
           text-transform: none;
           &.active{
             font-weight: bold;
+          }
+          md-icon{
+            font-size: 24px !important;
+            margin-right: 24px;
+          }
+          .navigation-title{
+            flex: 1;
           }
         }
       }
