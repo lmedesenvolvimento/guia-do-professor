@@ -77,6 +77,7 @@ gulp.task('topicos', () =>{
 
 gulp.task('scripts', () => {
     gulp.start('templates')
+    gulp.start('topicos')
     gulp.start('vendor')
     gulp.start('core')
     gulp.start('javascript')
@@ -104,6 +105,12 @@ gulp.task('watch', () => {
     });
 
     watch('templates/**/*.html', () => {
+        console.log("Template changes")
+        gulp.start('sass');
+        gulp.start('scripts');
+    });
+    
+    watch('topicos/**/*.html', () => {
         console.log("Template changes")
         gulp.start('sass');
         gulp.start('scripts');

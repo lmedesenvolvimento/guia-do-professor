@@ -6,44 +6,56 @@ window.CONFIG = {
         "disciplina":"Psicologia do Desenvolvimento e da Aprendizagem na Adolescência",
         "responsavel": "Professora Nidia Barone"
     },
-    "topicos": [        
+    "topicos": [
         {
-            "nome": "Tipografia",
-            "local": "topicos/tipografia.html",
+            "nome": "Apresentação",
+            "local": "topicos/apresentacao.html",
             "audio": "audios/Abstract - I Do This (ft. Roze) Prod By Drumma Battalion.mp3",
-            "icon": "icon-schedule",
+            "icon": "icon-account_balance",
             "default": true
         },
         {
-            "nome": "Grid",
-            "local": "topicos/grid.html",
+            "nome": "Introdução",
+            "local": "topicos/introducao.html",
             "audio": "audios/grid.mp3",
-            "icon": "icon-account_balance"
+            "icon": "icon-arrow_forward"
         },
         {
-            "nome": "Componetes",
-            "local": "topicos/componentes.html",
+            "nome": "Objetivos",
+            "local": "topicos/objetivos.html",
             "audio": "https://cdn.plyr.io/static/demo/Kishi_Bashi_-_It_All_Began_With_a_Burst.mp3",
-            "icon": "icon-print"
+            "icon": "icon-check_circle"
         },
         {
-            "nome": "Formulários",
-            "local": "topicos/formularios.html",
+            "nome": "Descrição do RED",
+            "local": "topicos/descricao.html",
             "audio": "audios/Abstract - Neverland (ft. Ruth B) (Prod. Blulake).mp3",
-            "icon": "icon-fingerprint"
+            "icon": "icon-chrome_reader_mode"
         },
         {
-            "nome": "Multimídia",
-            "local": "topicos/multimidia.html",
+            "nome": "Atividades Anteriores",
+            "local": "topicos/atividades-anteriores.html",
             "audio": "audios/Abstract - Scars (ft. RoZe) (Prod. Drumma Battalion).mp3",
-            "icon": "icon-build"
+            "icon": "icon-cached"
+        },
+        {
+            "nome": "Atividades com o RED",
+            "local": "topicos/atividades-red.html",
+            "audio": "audios/Abstract - Scars (ft. RoZe) (Prod. Drumma Battalion).mp3",
+            "icon": "icon-laptop_windows"
+        },
+        {
+            "nome": "Materiais Complementares",
+            "local": "topicos/complementar.html",
+            "audio": "audios/Abstract - Scars (ft. RoZe) (Prod. Drumma Battalion).mp3",
+            "icon": "icon-get_app"
         }
     ],
     "pdf": "pdf/impresso.pdf",
     "audio": "audios/Abstract - Scars (ft. RoZe) (Prod. Drumma Battalion).mp3",
     "tema":{
-      "primario": "purple-300",
-      "contraste": "orange"
+      "primario": "blue-700",
+      "contraste": "pink"
     },
     "imported_styles":[
         "custom.css"
