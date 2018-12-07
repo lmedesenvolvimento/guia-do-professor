@@ -51,7 +51,6 @@ var app = angular.module('application', [
   'angular-carousel',
   'ui.router',
   'ui.router.state.events',
-  'textAngular',
   'cfp.hotkeys'  
 ])
 
