@@ -12,6 +12,9 @@ uab-sidenav{
       width: $sidenav-max-width;
       transition: all ease-in-out 0.3s;
       padding-top: 64px;
+      md-content{        
+        width: $sidenav-max-width-with-hover;
+      }
       &:hover{      
         width: $sidenav-max-width-with-hover;
       }

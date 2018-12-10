@@ -26283,6 +26283,8 @@ uab-sidenav {
       -webkit-transition: all ease-in-out 0.3s;
       transition: all ease-in-out 0.3s;
       padding-top: 64px; }
+      uab-sidenav md-sidenav.laptop md-content {
+        width: 300px; }
       uab-sidenav md-sidenav.laptop:hover {
         width: 300px; }
     uab-sidenav md-sidenav md-content {
@@ -26546,6 +26548,10 @@ uab-quadro {
     margin-left: 3rem;
     margin-right: -12px;
     border-radius: 4px; }
+    uab-quadro .uab-quadro .uab-quadro-icon md-icon {
+      font-size: 36px;
+      color: white;
+      padding: 0px; }
   uab-quadro .uab-quadro .uab-quadro-body {
     -webkit-box-flex: 1;
     -ms-flex: 1;
