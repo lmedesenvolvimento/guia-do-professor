@@ -25,6 +25,21 @@ uab-header{
     padding: 24px 16px 24px;
     color: white;
     text-align: center;
+    display: grid;
+    grid-template-columns: 0.5fr 0.1fr 2fr;
+    max-width: 70% !important;
+    margin: auto;
+    .separador-subtitulo{
+      text-align: left;
+      margin: 10px;
+    }
+    .separador-titulo{
+      display: inline-block;
+      background-color: #fff;
+      width: 1px;
+      height: 80%;
+      margin: auto;
+    }
     .course{
       font-size: 80%;
       font-weight: bold;
@@ -35,7 +50,6 @@ uab-header{
     }
     .subtitle, .caption{
       font-size: 16pt;
-      margin-left: 3rem;
     }
     .titles{
       line-height: 1.1;
@@ -47,11 +61,10 @@ uab-header{
     }    
   }
   .uab-course-icon{
-    display: block;
-    width: 100%;
-    max-width: 360px;
+    width: 100px;
     height: auto;
-    margin: 8px auto;    
+    margin: 8px auto;   
+    display: inline-block; 
   }
   .md-toolbar-tools {
     @extend .h4;
@@ -130,7 +143,16 @@ uab-header + md-content{
     }   
     .uab-course-icon{
       margin: 8px 0px;    
-      padding-left: 8px
+      padding-left: 8px;
+      display: none;
+    }
+    uab-header-titles {
+      grid-template-columns: auto;
+      max-width: 100% !important;
+      margin: 0;
+      .separador-titulo{
+        display: none;
+      }
     }
   }
 }

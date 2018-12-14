@@ -1,10 +1,10 @@
 window.CONFIG = {
-    "nome": "Aula 01: Contrato Psicológico",
+    "nome": "Guia do professor",
     "academico":{
-        "curso": "Licenciatura em Pedagogia",
-        "cursoIcone": "layout/icones/admin_pub_tit.svg",
-        "disciplina":"Psicologia do Desenvolvimento e da Aprendizagem na Adolescência",
-        "responsavel": "Professora Nidia Barone"
+        "curso": "Guia do professor",
+        "cursoIcone": "layout/icones/logo-mide-branco.svg",
+        "disciplina":"Nome do RED",
+        "responsavel": "Projeto MIDE"
     },
     "topicos": [
         {
