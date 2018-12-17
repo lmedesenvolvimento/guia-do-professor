@@ -125,6 +125,7 @@ gulp.task('copy', ()=> {
   gulp.src('./css/*.css').pipe(gulp.dest('./dist/css'));
   gulp.src('./js/*.js').pipe(gulp.dest('./dist/js'));
   gulp.src('./fonts/*').pipe(gulp.dest('./dist/fonts'));
+  gulp.src('./imagens/*').pipe(gulp.dest('./dist/imagens'));
   gulp.src('./layout/**/*').pipe(gulp.dest('./dist/layout'));
   gulp.src('./templates/**/*.html').pipe(gulp.dest('./dist/templates'));
   gulp.src('./topicos/**/*.html').pipe(gulp.dest('./dist/topicos'));

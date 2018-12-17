@@ -2,16 +2,19 @@
   <div class="container" layout="row" layout-align="start center" flex>
     <uab-header-titles flex>
       <md-icon class='uab-course-icon' md-svg-src="{{$root.$global.manifest.academico.cursoIcone}}" ></md-icon>
-      <div class="subtitle">{{$root.$global.manifest.academico.disciplina}}</div>
-      <div class="titles">
-        <small class="caption">{{$root.$global.manifest.nome}}</small>
+      <span class="separador-titulo"></span>
+      <div class="separador-subtitulo">
+        <div class="subtitle">{{$root.$global.manifest.academico.disciplina}}</div>
+        <div class="titles">
+          <small class="caption">{{$root.$global.manifest.nome}}</small>
+        </div>
       </div>
     </uab-header-titles>
   </div>
 
   <div class="md-toolbar-tools">
     <div class="container-fluid" flex>
-      <md-button class="md-icon-button" ng-click="$ctrl.toggleSidenav()">
+      <md-button class="md-icon-button" ng-click="$ctrl.toggleSidenav()" ng-if="!$root.$mdMedia('gt-sm')">
         <md-tooltip>Tópicos</md-tooltip>
         <md-icon md-font-icon="icon-list"></md-icon>
       </md-button>
@@ -46,14 +49,7 @@
 
       <span class="md-toolbar-tools-text">{{($root.$global.current_topic.position + 1)}} de {{ $root.$global.manifest.topicos.length }} páginas</span>
 
-      <span flex="5"></span>
-
-      <md-button class="md-icon-button" ng-click="$ctrl.toggleAnnotations()">
-        <md-tooltip>Minhas Anotações</md-tooltip>
-        <md-icon md-font-icon="icon-chat"></md-icon>
-      </md-button>
+      <span flex="5"></span>      
     </div>
   </div>
 </md-toolbar>
-
-<uab-sidenav></uab-sidenav>

@@ -18,9 +18,9 @@
 <body ng-controller="ApplicationCtrl as app" ng-cloak>
   <div id='root' layout="column" layout-fill>
     <uab-header></uab-header>
-    <uab-sidenav></uab-sidenav>
     <uab-aplayer topics="$root.$global.manifest.topicos"></uab-aplayer>
     <div layout="row" flex>
+      <uab-sidenav></uab-sidenav>
       <md-content class="main" layout-padding flex>
         <div class="white-paper">
           <h2 id="content" class="cabecalho">{{$root.$global.current_topic.nome}}</h2>
@@ -28,7 +28,6 @@
         </div>
         <uab-footer></uab-footer>
       </md-content>
-      <uab-annotations></uab-annotations>
     </div>
   </div>
   <div id='impress' class='ng-hide'>
