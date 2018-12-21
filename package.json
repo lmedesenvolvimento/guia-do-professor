@@ -4,7 +4,10 @@
   "description": "Smart builder lesson for UAB",
   "main": "index.js",
   "author": "damisiuri@virtual.ufc.br",
-  "license": "MIT",  
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "node -e \"var s='../src',d='node_modules/src',fs=require('fs');fs.exists(d,function(e){e||fs.symlinkSync(s,d,'dir')});\""
+  },
   "dependencies": {
     "@fancyapps/fancybox": "3.3.0",
     "@uirouter/angularjs": "^1.0.8",
